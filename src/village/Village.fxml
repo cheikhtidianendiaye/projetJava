@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane onDragDetected="#chagerAcceuil" prefHeight="300.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" fx:controller="village.vController">
+   <children>
+      <Button fx:id="btnValider" layoutX="27.0" layoutY="157.0" mnemonicParsing="false" onAction="#valider" prefHeight="25.0" prefWidth="61.0" text="Valider" />
+      <Label layoutX="26.0" layoutY="41.0" prefHeight="25.0" prefWidth="149.0" text="nom du village : " />
+      <TextField fx:id="txt_nomV" layoutX="27.0" layoutY="87.0" prefHeight="25.0" prefWidth="164.0" />
+      <TableView fx:id="village_table" layoutX="250.0" layoutY="44.0" onMouseClicked="#tableClick" prefHeight="213.0" prefWidth="229.0">
+        <columns>
+          <TableColumn fx:id="id_coloumn" prefWidth="115.66668701171875" text="identifiant : " />
+          <TableColumn fx:id="nom_coloumn" onEditCommit="#changerFirst" prefWidth="112.33331298828125" text="nom village : " />
+        </columns>
+      </TableView>
+      <Button fx:id="btnActualiser" layoutX="121.0" layoutY="157.0" mnemonicParsing="false" onAction="#Actualiser" prefHeight="25.0" prefWidth="72.0" text="Actualiser" />
+      <Button fx:id="btnSupprimer" layoutX="73.0" layoutY="213.0" mnemonicParsing="false" onAction="#supprimer" text="Supprimer" />
+      <Label fx:id="params_lbl" layoutX="28.0" layoutY="5.0" prefHeight="17.0" prefWidth="247.0" />
+      <Button layoutX="442.0" layoutY="10.0" mnemonicParsing="false" onAction="#chagerAcceuil" prefHeight="25.0" prefWidth="37.0" text="&lt;--" />
+   </children>
+</AnchorPane>

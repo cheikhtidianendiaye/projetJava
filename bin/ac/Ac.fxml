@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="300.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ac.AcceuilController">
+   <top>
+      <MenuBar BorderPane.alignment="CENTER">
+        <menus>
+          <Menu mnemonicParsing="false" text="Fichier">
+            <items>
+                  <Menu mnemonicParsing="false" text="Creer">
+                     <items>
+                        <MenuItem mnemonicParsing="false" text="Village" />
+                        <MenuItem mnemonicParsing="false" text="Menage" />
+                     </items>
+                  </Menu>
+                  <MenuItem mnemonicParsing="false" text="Fermer" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Editer">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Supprimer" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Aide">
+            <items>
+              <MenuItem mnemonicParsing="false" text="About" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+   </top>
+   <center>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button layoutX="120.0" layoutY="121.0" mnemonicParsing="false" onAction="#chagerVillage" prefHeight="34.0" prefWidth="68.0" text="VILLAGE" />
+            <Button layoutX="278.0" layoutY="121.0" mnemonicParsing="false" onAction="#chagerMenage" prefHeight="34.0" prefWidth="68.0" text="MENAGE" />
+            <Label alignment="CENTER" layoutX="17.0" layoutY="20.0" prefHeight="29.0" prefWidth="469.0" text="MENU GENERAL" textFill="#986c6c">
+               <font>
+                  <Font size="48.0" />
+               </font>
+            </Label>
+            <Label fx:id="params" layoutX="144.0" layoutY="236.0" prefHeight="25.0" prefWidth="243.0" />
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>
